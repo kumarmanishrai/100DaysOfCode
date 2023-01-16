@@ -2,6 +2,7 @@ Platform : Leetcode
 Question Link : https://leetcode.com/problems/matrix-diagonal-sum/
 
 
+1572. Matrix Diagonal Sum
 
 Given a square matrix mat, return the sum of the matrix diagonals.
 
