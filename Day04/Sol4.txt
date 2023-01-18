@@ -1,0 +1,13 @@
+--> CPP solution(11ms)
+
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int n= nums.size();
+        int nSum = (n*(n+1))/2;
+        int vSum = accumulate(nums.begin(), nums.end(), 0);
+        int res = nSum - vSum;
+
+        return res;
+    }
+};
