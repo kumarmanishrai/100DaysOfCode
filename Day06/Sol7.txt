@@ -1,0 +1,17 @@
+--> CPP Solution (0.16)
+
+//Function to reverse the queue.
+queue<int> rev(queue<int> q)
+{
+    // add code here.
+    stack<int> temp;
+    while(!q.empty()) {
+        temp.push(q.front());
+        q.pop();
+    }
+    while(!temp.empty()) {
+        q.push(temp.top());
+        temp.pop();
+    }
+    return q;
+}
